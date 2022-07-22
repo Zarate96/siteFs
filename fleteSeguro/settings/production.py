@@ -12,8 +12,8 @@ ALLOWED_HOSTS = ['*']
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-#SITE_URL = 'https://fleteseguro.mx'
-#PROTOCOL_HTTP = 'https'
+SITE_URL = 'https://fleteseguro.com.mx'
+PROTOCOL_HTTP = 'https'
 
 DATABASES = {
     'default': {
