@@ -35,7 +35,54 @@
     * Author: BootstrapMade.com
     * License: https://bootstrapmade.com/license/
     ======================================================== -->
-   
+    <style>
+      #portfolio .service-item {
+        margin-bottom: 20px;
+      }
+
+      #portfolio .service-icon {
+        float: left;
+        background: #03C4EB;
+        border-radius: 50%;
+        transition: 0.5s;
+        border: 1px solid #03C4EB;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 64px;
+        height: 64px;
+      }
+
+      #portfolio .service-icon i {
+        color: #fff;
+        font-size: 24px;
+        line-height: 0;
+      }
+
+      #portfolio .service-item:hover .service-icon {
+        background: #fff;
+      }
+
+      #portfolio .service-item:hover .service-icon i {
+        color: #03C4EB;
+      }
+
+      #portfolio .service-title {
+        margin-left: 80px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+      }
+
+      #portfolio .service-title a {
+        color: #111;
+      }
+
+      #portfolio .service-description {
+        margin-left: 80px;
+        line-height: 24px;
+      }
+    </style>
     
 </head>
 
@@ -122,19 +169,23 @@
         <div class="row">
 
           <div class="col-lg-6 about-img">
-            <img src="https://hzaratecode.com/iconoFS.png" alt="">
+            <img src="{% static '/fs_images/opc1.jpeg' %}" alt="">
           </div>
 
           <div class="col-md-6 about-content">
             <h2 class="about-title">¿Cuántas veces hemos necesitado de un transporte y no sabemos a quién llamar, o si el transportista que llegó es de confiar?</h2>
             <p class="about-text">
-              FLETESEGURO verifica a todos los transportistas inscritos en la plataforma, que la descripción de las unidades corresponda con la realidad, que los documentos sean reales, que cuenten con los permisos de carga de material peligroso si son requeridos.
+              FLETESEGURO es la forma fácil y eficiente de contratar transporte externo a la medida de tus necesidades: un viaje sencillo, una ruta, carga refrigerada, 
+              entrega en CEDIS, etc. Con FLETESEGURO eliminas el factor de incertidumbre al contratar flete externo, los transportistas registrados en FLETESEGURO han 
+              sido verificados por nosotros y puedes revisar su historial y calificación en la plataforma.
             </p>
             <p class="about-text">
-              FLETESEGURO te dá la opción de contratar un seguro contra robo de mercancías (por favor revisa nuestra poliza de seguro), para que de esa forma y junto a nuestro proceso de verificación tengas la tranquilidad para utilizar nuestros servicios.
+              FLETESEGURO no tiene tarifas preestablecidas, cada transportista cotiza de forma independiente de acuerdo a su disponibilidad y ganas de trabajar, por 
+              lo que estamos seguros de que obtendrás propuestas muy atractivas en costo para realizar tus entregas.
             </p>
             <p class="about-text">
-              FLETESEGURO no opera con una tarifa pre-establecida, cada transportista cotiza de acuerdo a su disponibilidad y ganas de trabajar por lo que estamos seguros que obtendrás propuestas muy efectivas en costo para tus entregas.
+              Tienes la opción de contratar un seguro de robo de mercancías (* por favor revisa nuestra póliza de seguro), para que de esa forma y respaldado por nuestro 
+              proceso de verificación tengas la tranquilidad de utilizar nuestros servicios.
             </p>
             <p class="about-text">
               Utilizar FLETESEGURO no tiene ningún costo para nuestros clientes, los pagos se realizan a través de un portal de pago especializado, con los más altos estándares de seguridad por lo que puedes estar seguro de tus transacciones, FLETESEGURO no tiene acceso a tus datos de tarjetas de crédito o transacciones bancarias realizadas para efectuar los pagos.
@@ -159,12 +210,18 @@
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="fas fa-american-sign-language-interpreting"></i></div>
             <h4 class="service-title">Fácil de usar</h4>
-            <p class="service-description">Sólo regístrate, sube tu solicitud de cotización, elige al transportista que más te convenga por precio, tipo de unidad, desempeño en FLETESEGURO, paga y sigue el procedimiento para realizar el embarque.</p>
+            <p class="service-description">
+              Sólo regístrate, sube tu solicitud de cotización en 3 sencillos pasos, revisa las cotizaciones de los transportistas y elige al que más te agrade: 
+              por precio, tipo de unidad, desempeño en FLETESEGURO, realiza tu pago y sigue el procedimiento para realizar el embarque.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="fas fa-shuttle-van"></i></div>
             <h4 class="service-title">Unidades de calidad</h4>
-            <p class="service-description">Si no tienes transporte propio o si tus unidades no son suficientes en algunas ocasiones y necesitas contratar transporte externo para la entrega de tus pedidos, FLETESEGURO es la respuesta a tus necesidades.</p>
+            <p class="service-description">
+              Los transportistas registrados ponen a tu disposición todo tipo de unidades, si tienes algún requerimiento especial ( caja extralarga, refrigerada, 
+              redilas, mudanzera, etc.) indícalo en tu solicitud y puedes verificar el tipo de unidad cuando revises tus cotizaciones.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
             <div class="service-icon"><i class="fas fa-globe-americas"></i></div>
@@ -213,38 +270,42 @@
           <div class="col-md-12">
             <h3 class="section-title">TRANSPORTISTAS</h3>
             <div class="section-title-divider"></div>
-            <p class="section-description">Si necesitas servicio de tranpsorte de mercancías <b>FLETESEGURO</b> es la opción mas eficiente y segura, en el momento que lo necesites.</p>
+            <p class="section-description">
+              Si tienes unidades de transporte y no las utilizas al 100%, <b>FLETESEGURO</b> es solución para hacer crecer tu negocio
+            </p>
           </div>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-4 col-md-6 service-item">
-            <div class="service-icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="service-title">Accesibilidad</h4>
+            <div class="service-icon"><i class="fas fa-american-sign-language-interpreting"></i></div>
+            <h4 class="service-title">Rentabilidad</h4>
             <p class="service-description">Si eres transportista independiente, seguramente tienes períodos donde tu(s) unidad(es) no están trabajando por falta de clientes, sin embargo, tus costos fijos siguen corriendo y en lugar que tu(s) unidad(es) sean una fuente de ingresos son un lastre a tus finanzas.</p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
-            <div class="service-icon"><i class="bi bi-card-checklist"></i></div>
-            <h4 class="service-title">Movilidad de unidades</h4>
-            <p class="service-description">Entendemos perfectamente que tu actividad es el transporte, no las ventas y mercadotecnia, por lo que te ofrecemos nuestra cartera de clientes para que incrementes tu negocio, mas clientes, mas viajes, menos tiempos muertos, más utilidades.</p>
+            <div class="service-icon"><i class="fas fa-eye"></i></div>
+            <h4 class="service-title">Visibilidad con clientes potenciales</h4>
+            <p class="service-description">
+              Entendemos perfectamente que tu actividad es el transporte, no las ventas y mercadotecnia, por lo que te ofrecemos nuestra cartera de clientes para que incrementes tu negocio, mas clientes, mas viajes, menos tiempos muertos, más utilidades.
+            </p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
-            <div class="service-icon"><i class="bi bi-bar-chart"></i></div>
+            <div class="service-icon"><i class="fas fa-lock"></i></div>
             <h4 class="service-title">Confianza</h4>
             <p class="service-description">Los clientes de FLETESEGURO utilizan nuestros servicios ya que les ofrecemos una plataforma de uso extremadamente fácil, los transportistas dentro de FLETESEGURO están verificados por lo que los clientes confían en ellos, el proceso es muy fácil y transparente.</p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
-            <div class="service-icon"><i class="bi bi-binoculars"></i></div>
+            <div class="service-icon"><i class="fas fa-shield"></i></div>
             <h4 class="service-title">Pago seguro</h4>
             <p class="service-description">Tu pago está garantizado por FLETESEGURO, una vez que el viaje está terminado y cerrado, nos haces llegar tu factura y listo, recibes tu pago por transferencia bancaria.</p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
-            <div class="service-icon"><i class="bi bi-brightness-high"></i></div>
+            <div class="service-icon"><i class="fas fa-tasks"></i></div>
             <h4 class="service-title">Administra tus unidades</h4>
             <p class="service-description">Puedes registrar una o varias unidades y de esa forma multiplicar tus oportunidades de generar utilidades.</p>
           </div>
           <div class="col-lg-4 col-md-6 service-item">
-            <div class="service-icon"><i class="bi bi-calendar4-week"></i></div>
+            <div class="service-icon"><i class="fas fa-smile"></i></div>
             <h4 class="service-title">Fácil de usar</h4>
             <p class="service-description">El proceso es muy fácil, te registras en FLETESEGURO con todos tus datos, realizamos la verificación de tus datos y unidades y estás listo para cotizar, si tu cotización fue seleccionada, sigue el proceso en FLETESEGURO y listo, más clientes, más viajes, mayores utilidades.</p>
           </div>
@@ -333,7 +394,7 @@
             Licensing information: https://bootstrapmade.com/license/
             Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Imperial
           -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            Designed by <a href="https://.com/">HzCode</a>
           </div>
         </div>
       </div>
